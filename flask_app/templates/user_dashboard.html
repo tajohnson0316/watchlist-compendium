@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <html lang="en" data-bs-theme="dark">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>The Watchlist Compendium</title>
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+        crossorigin="anonymous"
+      />
+    </head>
+    <body>
+      <!-- Active user navbar START -->
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand fs-3" href="/home">Working Title</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/home"
+                  >Dashboard</a
+                >
+              </li>
+              <!-- Your Platforms dropdown START -->
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Your Platforms
+                </a>
+                <!-- Your Platforms dropdown list START -->
+                <ul class="dropdown-menu">
+                  <!-- TODO: Platforms dropdown menu items -->
+                  <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
+                </ul>
+              </li>
+              <!-- Your Platforms dropdown END -->
+
+              <!-- Edit Profile nav item START -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Edit Profile</a>
+              </li>
+            </ul>
+            <!-- TODO: About link/href -->
+            <a class="nav-link mx-3" aria-current="page" href="#">About</a>
+            <a class="btn btn-danger" href="/logout" role="button">Log Out</a>
+          </div>
+        </div>
+      </nav>
+      <!-- Active user navbar END -->
+
+      <main class="container-fluid p-4">
+        <div class="card col-lg-2">
+          <!-- TODO: User's first name -->
+          <div class="card-header text-center"><h2>User's Watchlist</h2></div>
+          <form action="#" method="POST">
+            <div class="card-body">
+              <div>
+                <!-- TODO: Add media FORM ACTION here -->
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between align-items-end">
+                    <label for="media_name" class="form-label"
+                      >Media Name: *</label
+                    >
+                    <p class="text-decoration-underline fs-4">+ Quick Add</p>
+                  </div>
+                  <input
+                    type="text"
+                    id="media_name"
+                    name="media_name"
+                    class="form-control"
+                    oninput="toggleAddMediaButton()"
+                  />
+                </div>
+                <div class="mb-3">
+                  <select
+                    name="category"
+                    id="category"
+                    class="form-select"
+                    onchange="toggleAddMediaButton()"
+                  >
+                    <option value="Category" selected>Category *</option>
+                    <option value="Series">Series</option>
+                    <option value="Movie/Documentary">Movie/Documentary</option>
+                    <option value="Miscellaneous">Miscellaneous</option>
+                  </select>
+                </div>
+                <div class="mb-3">
+                  <select
+                    name="platform_name"
+                    id="platform_name"
+                    class="form-select"
+                    onchange="toggleAddMediaButton()"
+                  >
+                    <option value="Platform" selected>Platform *</option>
+                    <!-- TODO: List all available platforms -->
+                    <option value="Miscellaneous">Miscellaneous</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="card-footer">
+              <p class="d-flex justify-content-end">* Denotes required field</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <a href="/home" id="view_all_link">View all media</a>
+                <button
+                  type="submit"
+                  class="btn btn-success"
+                  id="quick_add_submit_button"
+                  disabled
+                >
+                  Add Media
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"
+      ></script>
+      <script src="{{url_for('static', filename='quick_add_card_script.js')}}"></script>
+    </body>
+  </html>
+</html>

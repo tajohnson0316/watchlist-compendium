@@ -58,8 +58,6 @@ def display_registration_platforms():
 # Display homepage route - GET
 @app.route("/home", methods=["GET"])
 def display_homepage():
-    if not "user_id" in session:
-        return redirect("/")
-
+    # TODO: session validation
     # TODO: homepage route
-    return redirect("/")
+    return render_template("user_dashboard.html")
