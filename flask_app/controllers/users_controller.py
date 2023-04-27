@@ -1,7 +1,6 @@
 from flask import render_template, request, redirect, session
 from flask_app import app
 from flask_app.models.user_model import User
-from flask_app.models import tree_model
 
 
 # Login and registration form routes - GET
@@ -49,8 +48,18 @@ def logout():
     return redirect("/")
 
 
+# Display registration platform form route - GET
+@app.route("/users/new/platforms", methods=["GET"])
+def display_registration_platforms():
+    # TODO: session validation
+    return render_template("new_user_platform_form.html")
+
+
 # Display homepage route - GET
 @app.route("/home", methods=["GET"])
 def display_homepage():
+    if not "user_id" in session:
+        return redirect("/")
+
     # TODO: homepage route
-    return
+    return redirect("/")
