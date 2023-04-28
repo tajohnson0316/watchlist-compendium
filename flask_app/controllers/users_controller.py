@@ -56,11 +56,11 @@ def display_registration_platforms():
 
 
 # Display homepage route - GET
-@app.route("/home", methods=["GET"])
+@app.route("/home/unlisted", methods=["GET"])
 def display_homepage():
     # TODO: session validation
     # TODO: homepage route
-    return render_template("user_dashboard.html")
+    return render_template("user_dashboard_platform_focus.html")
 
 
 @app.route("/platforms/new")
