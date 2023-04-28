@@ -73,7 +73,7 @@ def display_platform():
     return render_template("display_platform.html")
 
 
-@app.route("/platforms/unlisted/edit")
+@app.route("/platforms/edit/unlisted")
 def edit_platform():
     return render_template("edit_platform_form.html")
 
@@ -83,6 +83,11 @@ def display_new_media_form():
     return render_template("new_media_form.html")
 
 
-@app.route("/media/attack-on-titan/edit")
+@app.route("/media/edit/attack-on-titan")
 def display_edit_media_form():
     return render_template("edit_media_form.html")
+
+
+@app.route("/media/view/attack-on-titan")
+def display_media():
+    return render_template("display_media.html")

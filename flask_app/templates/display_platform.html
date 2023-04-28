@@ -5,7 +5,7 @@
       <meta charset="UTF-8" />
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>The Watchlist Compendium</title>
+      <title>PropheSee</title>
       <link
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
         rel="stylesheet"
@@ -17,7 +17,7 @@
       <!-- Active user navbar START -->
       <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand fs-3" href="/home">Working Title</a>
+          <a class="navbar-brand fs-3" href="/home/unlisted">PropheSee</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -32,7 +32,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/home"
+                <a class="nav-link" aria-current="page" href="/home/unlisted"
                   >Dashboard</a
                 >
               </li>
@@ -82,11 +82,11 @@
             <!-- TODO: Platform link list hrefs here -->
             <div class="d-flex justify-content-around gap-3">
               <!-- TODO: Add media to platform href -->
-              <a href="#">Add Media</a>
+              <a href="/media/new">Add Media</a>
               <span> | </span>
-              <a href="#">Edit Platform</a>
+              <a href="/platforms/edit/unlisted">Edit Platform</a>
               <span> | </span>
-              <a href="#">To Platform</a>
+              <a href="/platforms/edit/unlisted">To Platform</a>
             </div>
           </div>
         </div>
@@ -118,7 +118,7 @@
                 <tr>
                   <td>Attack on Titan</td>
                   <td>Complete</td>
-                  <td>4</td>
+                  <td>5</td>
                   <td>Yes</td>
                   <td>2023-04-27</td>
                   <td>2023-04-27</td>
@@ -130,11 +130,16 @@
                   </td>
                   <td>
                     <div class="d-flex justify-content-center gap-3">
-                      <a href="#">View</a>
+                      <a href="/media/view/attack-on-titan">View</a>
                       <span> | </span>
-                      <a href="#">Edit</a>
+                      <a href="/media/edit/attack-on-titan">Edit</a>
                       <span> | </span>
-                      <a href="#">To Platform</a>
+                      <a
+                        href="https://www.hulu.com/welcome"
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        >To Platform</a
+                      >
                     </div>
                   </td>
                 </tr>
