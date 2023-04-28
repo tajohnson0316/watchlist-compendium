@@ -71,3 +71,8 @@ def display_new_platform_form():
 @app.route("/platforms/unlisted")
 def display_platform():
     return render_template("display_platform.html")
+
+
+@app.route("/media/new")
+def display_new_media_form():
+    return render_template("new_media_form.html")
