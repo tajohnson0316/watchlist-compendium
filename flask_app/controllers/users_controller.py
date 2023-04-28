@@ -66,3 +66,8 @@ def display_homepage():
 @app.route("/platforms/new")
 def display_new_platform_form():
     return render_template("new_platform_form.html")
+
+
+@app.route("/platforms/unlisted")
+def display_platform():
+    return render_template("display_platform.html")
