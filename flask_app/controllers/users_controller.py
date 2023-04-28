@@ -61,3 +61,8 @@ def display_homepage():
     # TODO: session validation
     # TODO: homepage route
     return render_template("user_dashboard.html")
+
+
+@app.route("/platforms/new")
+def display_new_platform_form():
+    return render_template("new_platform_form.html")

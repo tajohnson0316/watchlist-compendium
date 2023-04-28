@@ -68,8 +68,10 @@
       </nav>
       <!-- Active user navbar END -->
 
-      <main class="container-fluid p-4">
-        <div class="card col-lg-2">
+      <!-- Main START -->
+      <main class="container-fluid d-flex justify-content-between gap-5 p-4">
+        <!-- Quick Add card START -->
+        <div class="card col-lg-2 h-50 sticky-top">
           <!-- TODO: User's first name -->
           <div class="card-header text-center"><h2>User's Watchlist</h2></div>
           <form action="#" method="POST">
@@ -113,7 +115,7 @@
                   >
                     <option value="Platform" selected>Platform *</option>
                     <!-- TODO: List all available platforms -->
-                    <option value="Miscellaneous">Miscellaneous</option>
+                    <option value="Unlisted">Unlisted</option>
                   </select>
                 </div>
               </div>
@@ -134,6 +136,189 @@
             </div>
           </form>
         </div>
+        <!-- Quick Add card END -->
+
+        <div>
+          <div class="d-flex justify-content-between">
+            <div>
+              <h1>
+                <!-- TODO: Current tab name instead of "unlisted" -->
+                <!-- TODO: Current tab href here -->
+                <a class="text-decoration-none" href="#">Unlisted</a> - Sneak
+                Peek
+              </h1>
+            </div>
+            <div>
+              <!--TODO: Add media to platform button href here -->
+              <!--TODO: Add media to "Platform Name" button href here -->
+              <a
+                href="#"
+                class="btn btn-outline-success text-wrap"
+                role="button"
+                >Add new media to Unlisted</a
+              >
+            </div>
+          </div>
+          <!-- Dashboard card START -->
+          <div class="card">
+            <!-- Dashboard header START -->
+            <div class="card-header">
+              <ul class="nav nav-tabs card-header-tabs justify-content-start">
+                <!-- TODO: List user's platforms -->
+                <!-- TODO: Dashboard card tabs hrefs here -->
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Hulu</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Netflix</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">Disney+</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link active">Unlisted</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">( + )</a>
+                </li>
+              </ul>
+            </div>
+            <!-- Dashboard header END -->
+
+            <!-- Dashboard body START -->
+            <div class="card-body">
+              <!-- 1st row START -->
+              <div class="row">
+                <div class="d-flex justify-content-around gap-3 p-2">
+                  <!-- Recently Added table START -->
+                  <div class="col-lg-5">
+                    <h3>Recently Added</h3>
+                    <table
+                      class="table table-hover table-bordered table-striped table-fixed"
+                    >
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th scope="col">Title</th>
+                          <th scope="col">Added</th>
+                          <th scope="col">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- TODO: List user's platform media -->
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>District 9</td>
+                          <td>2023-04-27</td>
+                          <td>
+                            <div class="d-flex justify-content-center gap-3">
+                              <a href="#">View</a>
+                              <span> | </span>
+                              <a href="#">Edit</a>
+                              <span> | </span>
+                              <a href="#">To Platform</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- Recently Added table END -->
+
+                  <!-- Recently Added table START -->
+                  <div class="col-lg-5">
+                    <h3>Currently Watching</h3>
+                    <table
+                      class="table table-hover table-bordered table-striped table-fixed"
+                    >
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th scope="col">Title</th>
+                          <th scope="col">Last Updated</th>
+                          <th scope="col">Actions</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- TODO: List user's platform media -->
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>District 9</td>
+                          <td>2023-04-27</td>
+                          <td>
+                            <div class="d-flex justify-content-center gap-3">
+                              <a href="#">View</a>
+                              <span> | </span>
+                              <a href="#">Edit</a>
+                              <span> | </span>
+                              <a href="#">To Platform</a>
+                            </div>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- Recently Added table END -->
+                </div>
+              </div>
+              <!-- Card body 1st row END -->
+
+              <!-- Card body 2nd row START -->
+              <div class="row">
+                <div class="d-flex justify-content-around gap-3 p-2">
+                  <div class="col-lg-12">
+                    <h3>Completed</h3>
+                    <table
+                      class="table table-hover table-bordered table-striped table-fixed"
+                    >
+                      <thead>
+                        <tr>
+                          <th></th>
+                          <th scope="col">Title</th>
+                          <th scope="col">Added</th>
+                          <th class="col-lg-2" scope="col">Actions</th>
+                          <th scope="col">Completed</th>
+                          <th class="col-lg-5" scope="col">Notes</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <!-- TODO: List user's platform media -->
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>That Time I Got Reincarnated as a Slime</td>
+                          <td>2023-04-27</td>
+                          <td>
+                            <div class="d-flex justify-content-center gap-3">
+                              <a href="#">View</a>
+                              <span> | </span>
+                              <a href="#">Edit</a>
+                              <span> | </span>
+                              <a href="#">To Platform</a>
+                            </div>
+                          </td>
+                          <td>2023-04-27</td>
+                          <td>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Fugit sit totam tenetur, laudantium eius, fuga
+                            quae reprehenderit illo minus, recusandae eum minima
+                            error! Corrupti, perspiciatis sequi? Dolorum
+                            quibusdam in amet.
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <!-- Card body 2nd row END -->
+            </div>
+            <!-- Dashboard body END -->
+          </div>
+        </div>
+        <!-- Dashboard card END -->
       </main>
 
       <script
@@ -141,7 +326,6 @@
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"
       ></script>
-      <script src="{{url_for('static', filename='quick_add_card_script.js')}}"></script>
     </body>
   </html>
 </html>
